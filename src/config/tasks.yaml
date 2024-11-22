@@ -1,0 +1,28 @@
+research_task:
+  description: >
+    Conduct thorough research on {topic} to uncover interesting, relevant, and current insights that will form the foundation of a tweet.
+  expected_output: >
+    Return relevant and engaging insights about {topic}, presented in a way that lends itself to tweet creation.
+  agent: research_agent
+
+drafting_task:
+  description: >
+    Based on the research findings, create three tweet drafts that vary in format, tone, and content.
+    Examples of draft types include:
+    - A fact-based tweet with engaging statistics or facts.
+    - A question to engage the audience and prompt interaction.
+    - A witty or thought-provoking one-liner.
+    The user will be presented with these drafts and they can choose one tweet.
+  expected_output: >
+    Three tweet drafts with clear differentiation in style and content, ready for user review and selection.
+  agent: tweet_drafting_agent
+  context: ["research_task"]
+  human_input: True
+
+posting_task:
+  description: >
+    Post the tweet.
+  expected_output: >
+    Confirmation of successful tweet posting, along with details such as posting time and platform.
+  context: ["tweet_drafting_task"]
+  agent: tweet_posting_agent
