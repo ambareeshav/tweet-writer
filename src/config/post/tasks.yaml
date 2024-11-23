@@ -1,0 +1,7 @@
+
+posting_task:
+  description: >
+    Post the draft tweet chosen by the user. 
+  expected_output: >
+    Confirmation of successful tweet posting, along with confirmation that the tweet has been posted with link. 
+  agent: posting_agent
