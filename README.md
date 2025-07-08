@@ -1,6 +1,6 @@
 # Tweet Writer
 
-The Tweet Writer is an advanced Python application designed to automate the process of composing and posting tweets. By leveraging the power of CrewAI's agentic framework, this system orchestrates multiple autonomous agents—each with specialized roles—to collaboratively research content, draft engaging tweets, and seamlessly post them to your Twitter account.
+The Tweet Writer is an advanced Python application designed to automate the process of composing and posting tweets. By leveraging the power of CrewAI's agentic framework, this system orchestrates multiple autonomous agents with specialized roles to collaboratively research content, draft engaging tweets, and seamlessly post them to your Twitter account.
 
 ## Key Features
 
